@@ -24,20 +24,24 @@ Request Body:
 - value(number): the new value for the field
 ```
 ___
-The authors
->>[IhorMal](https://github.com/IhorMal)
-___
-Badges
-License: MIT
-___
-**Demo (italic)**
-[test](https://ihormal.github.io/test_tweets/)
-___
-Assistance
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+**The authors (italic)**
+>[IhorMal](https://github.com/IhorMal)
 ___
 
-Feedback
+**Badges (italic)**
+>License: MIT
+___
+
+**Demo (italic)**
+>test](https://ihormal.github.io/test_tweets/)
+___
+
+**Assistance (italic)**
+>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+___
+
+**Feedback (italic)**
 > If you have any feedback, please contact us at ihormalyuha@gmail.com
 ___
 Deployment
