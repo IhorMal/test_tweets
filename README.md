@@ -23,21 +23,22 @@ Request Body:
 key(string): field name to update
 value(number): the new value for the field
 ```
+___
 The authors
 [IhorMal](https://github.com/IhorMal)
-
+___
 Badges
 License: MIT
-
+___
 Demo
 [test](https://ihormal.github.io/test_tweets/)
-
+___
 Assistance
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
+___
 Feedback
 If you have any feedback, please contact us at ihormalyuha@gmail.com
-
+___
 Deployment
 Getting started with creating a React application
 This project was launched with [Create React App](https://github.com/facebook/create-react-app) .
