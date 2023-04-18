@@ -1,8 +1,9 @@
+
 Description of the project
 This project is designed to visualize and manage tweet user cards.
--------
-API Reference https://api_key.mockapi.io/api/v1/users
 
+API Reference https://api_key.mockapi.io/api/v1/users
+___
 Get users
 https://api_key.mockapi.io/api/v1/users?limit={limit}&page={page}
 HTTP method: GET
@@ -19,22 +20,22 @@ id(string): User ID
 Request Body:
 key(string): field name to update
 value(number): the new value for the field
--------
+
 The authors
 [IhorMal](https://github.com/IhorMal)
----
+
 Badges
 License: MIT
----
+
 Demo
 [test](https://ihormal.github.io/test_tweets/)
----
+
 Assistance
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
----
+
 Feedback
 If you have any feedback, please contact us at ihormalyuha@gmail.com
----
+
 Deployment
 Getting started with creating a React application
 This project was launched with [Create React App](https://github.com/facebook/create-react-app) .
