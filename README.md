@@ -37,8 +37,8 @@ Assistance
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ___
 
-> Feedback
-If you have any feedback, please contact us at ihormalyuha@gmail.com
+Feedback
+> If you have any feedback, please contact us at ihormalyuha@gmail.com
 ___
 Deployment
 Getting started with creating a React application
