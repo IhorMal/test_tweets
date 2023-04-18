@@ -45,21 +45,21 @@ ___
 **Feedback (italic)**
 > If you have any feedback, please contact us at ihormalyuha@gmail.com
 ___
-Deployment
+**Deployment**
 Getting started with creating a React application
 This project was launched with [Create React App](https://github.com/facebook/create-react-app) .
 
 Scripts are available
 In the project directory you can run:
 
-npm start
+**npm start** 
 >Starts the program in development mode.
 Open http://localhost:3000 to view it in your browser.
 
 The page will reload when you make changes.
 You can also see lint errors on the console.
 
-npm run build
+**npm run build**
 >Builds the application for production in the buildfolder.
 It properly bundles React in production mode and optimizes the build for best performance.
 
@@ -68,7 +68,7 @@ Your app is ready to deploy!
 
 For more information, see in the deployment section.
 
-npm run eject
+**npm run eject**
 >Note: This is a one-way transaction. Once ejected, you can't go back!
 
 If you are not satisfied with the build tool and configuration choices, you can eject at any time. This command will remove one assembly dependency from your project.
@@ -79,4 +79,4 @@ You should never use eject. The curated feature set is suitable for small to med
 
 This section has been moved to: https://facebook.github.io/create-react-app/docs/deployment
 
-npm run >build fails to minimize
+npm run build fails to minimize
