@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useLocalFollow = (initialFollow) => {
+const useLocalFollow = () => {
   const [myFollow, setMyFollow] = useState(
     JSON.parse(localStorage.getItem("follow")) || []
   );

@@ -1,6 +1,6 @@
 import UserItem from "../UserItem/UserItem";
 import saylet from './UserList.module.css'
-import useLocalFollow from "../../hoks";
+import useLocalFollow from "../../hooks/useLocalFollow";
 const UsersList = ({ users }) => {
   const [myFollow, setMyFollow] = useLocalFollow();
   

@@ -1,33 +1,26 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import { usersGet } from "./api/requests";
-import UsersItems from "./components/UsersList/UsersList";
-const limit = 8;
+import { Route, Link, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import saylet from "./App.module.css";
+import Tweets from "./pages/Tweets/Tweets";
 
 function App() {
-  const [users, setUsers] = useState([]);
-  const [page, setPage] = useState(1);
-  const [receivedCount, setReceivedCount] = useState(0);
-
-  const addRequest = () => {
-    setPage(page + 1);
-  };
-
-  useEffect(() => {
-    usersGet(limit, page).then((response) => {
-      setReceivedCount(response.length);
-      setUsers([...users, ...response]);
-    });
-  }, [page]);
-
   return (
-    <div className="App">
-      <UsersItems className="App-Items" users={users} />
-      {users.length > 0 && receivedCount >= limit && (
-        <button className="App-button" onClick={() => addRequest()}>
-          Load More
-        </button>
-      )}
+    <div className={saylet.App}>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/tweets">Tweets</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tweets" element={<Tweets />} />
+        <Route path="/*" element={<Home />} />
+      </Routes>
     </div>
   );
 }
