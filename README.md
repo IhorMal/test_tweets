@@ -10,18 +10,18 @@ Get users
 https://{api_key}.mockapi.io/api/v1/users?limit={limit}&page={page}
 HTTP method: GET
 Required parameters:
-+ api_key(string): Your API key
-+ limit(number): number of records
-+ page(number): the next number of records
+- api_key(string): Your API key
+- limit(number): number of records
+- page(number): the next number of records
 
 Update user
 https://api_key.mockapi.io/api/v1/users/${id}
 HTTP method: PUT
 Required parameters:
-+id(string): User ID
+- id(string): User ID
 Request Body:
-+key(string): field name to update
-+value(number): the new value for the field
+- key(string): field name to update
+- value(number): the new value for the field
 ```
 ___
 The authors
@@ -48,14 +48,14 @@ Scripts are available
 In the project directory you can run:
 
 npm start
-Starts the program in development mode.
+>Starts the program in development mode.
 Open http://localhost:3000 to view it in your browser.
 
 The page will reload when you make changes.
 You can also see lint errors on the console.
 
 npm run build
-Builds the application for production in the buildfolder.
+>Builds the application for production in the buildfolder.
 It properly bundles React in production mode and optimizes the build for best performance.
 
 The build is minimized and the filenames contain hashes.
@@ -64,7 +64,7 @@ Your app is ready to deploy!
 For more information, see in the deployment section.
 
 npm run eject
-Note: This is a one-way transaction. Once ejected, you can't go back!
+>Note: This is a one-way transaction. Once ejected, you can't go back!
 
 If you are not satisfied with the build tool and configuration choices, you can eject at any time. This command will remove one assembly dependency from your project.
 
@@ -74,4 +74,4 @@ You should never use eject. The curated feature set is suitable for small to med
 
 This section has been moved to: https://facebook.github.io/create-react-app/docs/deployment
 
-npm run build fails to minimize
+npm run >build fails to minimize
