@@ -6,13 +6,12 @@ API Reference https://api_key.mockapi.io/api/v1/users
 ___
 ```
 Get users
-https://api_key.mockapi.io/api/v1/users?limit={limit}&page={page}
+https://{api_key}.mockapi.io/api/v1/users?limit={limit}&page={page}
 HTTP method: GET
 Required parameters:
 api_key(string): Your API key
 limit(number): number of records
 page(number): the next number of records
-```
 
 Update user
 https://api_key.mockapi.io/api/v1/users/${id}
@@ -22,7 +21,7 @@ id(string): User ID
 Request Body:
 key(string): field name to update
 value(number): the new value for the field
-
+```
 The authors
 [IhorMal](https://github.com/IhorMal)
 
