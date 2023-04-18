@@ -4,6 +4,7 @@ This project is designed to visualize and manage tweet user cards.
 
 API Reference https://api_key.mockapi.io/api/v1/users
 ___
+```
 Get users
 https://api_key.mockapi.io/api/v1/users?limit={limit}&page={page}
 HTTP method: GET
@@ -11,6 +12,7 @@ Required parameters:
 api_key(string): Your API key
 limit(number): number of records
 page(number): the next number of records
+```
 
 Update user
 https://api_key.mockapi.io/api/v1/users/${id}
