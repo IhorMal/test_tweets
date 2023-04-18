@@ -6,11 +6,16 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px 25px;
     border-bottom: 1px solid #000;
 
 }
 
+.link {
+    padding: 10px;
+    text-decoration: none;
+}
 .item {
     padding-left: 40px;
 }
