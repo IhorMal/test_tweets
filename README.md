@@ -30,7 +30,7 @@ ___
 Badges
 License: MIT
 ___
-Demo
+*Demo (italic)*
 [test](https://ihormal.github.io/test_tweets/)
 ___
 Assistance
