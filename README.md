@@ -4,7 +4,7 @@ Description of the project
 This project is designed to visualize and manage tweet user cards.
 
 ___
-API Reference https://api_key.mockapi.io/api/v1/users
+**API Reference** https://api_key.mockapi.io/api/v1/users
 
 ```
 Get users
