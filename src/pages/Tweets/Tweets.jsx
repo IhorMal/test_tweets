@@ -23,7 +23,7 @@ const [users, setUsers] = useState([]);
   
     return (
         <>
-        <Link to="/">Back</Link>
+        <Link className={saylet.link}  to="/">Back</Link>
         <UsersItems users={users} />
         {users.length > 0 && receivedCount >= limit && (
           <button className={saylet.button} onClick={() => addRequest()}>

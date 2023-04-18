@@ -2,7 +2,16 @@
     margin: 20px 50px;
   }
   
-  ul {
+.list {
     list-style: none;
-  }
+    display: flex;
+    justify-content: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #000;
+
+}
+
+.item {
+    padding-left: 40px;
+}
  
