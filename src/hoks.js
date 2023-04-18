@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const useLocalFollow = (initialFollow) => {
   const [myFollow, setMyFollow] = useState(
-    JSON.parse(localStorage.getItem("follow")) || initialFollow
+    JSON.parse(localStorage.getItem("follow")) || []
   );
 
   useEffect(() => {
@@ -14,7 +14,9 @@ const useLocalFollow = (initialFollow) => {
       setMyFollow(myFollow.filter((followId) => followId !== id));
       followers--;
     } else {
-      setMyFollow([...myFollow, id]);
+      const updatedIds = [...myFollow, id];
+      setMyFollow(updatedIds);
+      localStorage.setItem("follow", JSON.stringify(updatedIds));
       followers++;
     }
     return followers;

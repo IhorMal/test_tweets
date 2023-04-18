@@ -1,15 +1,13 @@
 import styles from "./UserItem.module.css";
 import imgBG from "../../assets/images/card.png";
 import ellipse from "../../assets/images/ellipse.png";
-import useLocalFollow from "../../hoks";
 import { putFollow } from "../../api/requests";
 
-const UserItem = ({ user }) => {
-  const [myFollow, setMyFollow] = useLocalFollow([]);
-  const changeFollow = () => {
-    const followers = setMyFollow(Number(user.id), user.followers);
-    user.followers = followers;
-    putFollow(user.id, user);
+const UserItem = ({ user, setMyFollow, myFollow }) => {
+  const changeFollow = (id, followerss) => {
+    const updatedFollowers = setMyFollow(Number(id), followerss);
+    user.followers = updatedFollowers;
+    putFollow(id, { followers: updatedFollowers });
   };
 
   return (
@@ -31,7 +29,7 @@ const UserItem = ({ user }) => {
           Followers
         </p>
         <button
-          onClick={(e) => changeFollow(e)}
+          onClick={() => changeFollow(user.id, user.followers)}
           className={
             myFollow.includes(Number(user.id))
               ? styles.buttonFollowing

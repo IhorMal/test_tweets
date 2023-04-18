@@ -8,26 +8,26 @@ function App() {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [receivedCount, setReceivedCount] = useState(0);
-  
+
   const addRequest = () => {
     setPage(page + 1);
   };
 
   useEffect(() => {
     usersGet(limit, page).then((response) => {
-      setReceivedCount(response.length)
+      setReceivedCount(response.length);
       setUsers([...users, ...response]);
     });
   }, [page]);
-  
+
   return (
     <div className="App">
       <UsersItems className="App-Items" users={users} />
-      {users.length > 0  && receivedCount >= limit  &&  (
+      {users.length > 0 && receivedCount >= limit && (
         <button className="App-button" onClick={() => addRequest()}>
-          Доати
+          Load More
         </button>
-      )}   
+      )}
     </div>
   );
 }
