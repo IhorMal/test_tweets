@@ -10,22 +10,22 @@ Get users
 https://{api_key}.mockapi.io/api/v1/users?limit={limit}&page={page}
 HTTP method: GET
 Required parameters:
-api_key(string): Your API key
-limit(number): number of records
-page(number): the next number of records
++ api_key(string): Your API key
++ limit(number): number of records
++ page(number): the next number of records
 
 Update user
 https://api_key.mockapi.io/api/v1/users/${id}
 HTTP method: PUT
 Required parameters:
-id(string): User ID
++id(string): User ID
 Request Body:
-key(string): field name to update
-value(number): the new value for the field
++key(string): field name to update
++value(number): the new value for the field
 ```
 ___
 The authors
-[IhorMal](https://github.com/IhorMal)
+>>[IhorMal](https://github.com/IhorMal)
 ___
 Badges
 License: MIT
