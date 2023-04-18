@@ -1,6 +1,6 @@
 Description of the project
 This project is designed to visualize and manage tweet user cards.
-----
+-------
 API Reference https://api_key.mockapi.io/api/v1/users
 
 Get users
@@ -19,7 +19,7 @@ id(string): User ID
 Request Body:
 key(string): field name to update
 value(number): the new value for the field
-----
+-------
 The authors
 [IhorMal](https://github.com/IhorMal)
 ---
