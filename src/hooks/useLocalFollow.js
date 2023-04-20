@@ -5,9 +5,9 @@ const useLocalFollow = () => {
     JSON.parse(localStorage.getItem("follow")) || []
   );
 
-  useEffect(() => {
-    localStorage.setItem("follow", JSON.stringify(myFollow));
-  }, [myFollow]);
+  // useEffect(() => {
+  //   localStorage.setItem("follow", JSON.stringify(myFollow));
+  // }, [myFollow]);
 
   const toggleFollow = (id, followers) => {
     if (myFollow.includes(id)) {

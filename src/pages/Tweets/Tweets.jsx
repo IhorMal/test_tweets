@@ -6,18 +6,20 @@ import { Link } from "react-router-dom";
  const limit = 8;
 
 function Tweets() {
-const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [receivedCount, setReceivedCount] = useState(0);
+
 
   const addRequest = () => {
     setPage(page + 1);
   };
   
   useEffect(() => {
-    usersGet(limit, page).then((response) => {
-      setReceivedCount(response.length);
-      setUsers([...users, ...response]);
+    console.log(page)
+      usersGet(limit, page).then((response) => {
+        setReceivedCount(response.length);
+        setUsers((usersOld) => [...usersOld, ...response]);
     });
   }, [page]);
   
